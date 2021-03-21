@@ -5,13 +5,13 @@ public class Main {
         long bonusBelowLimitForRegistered = service.calculate(true, 1000_60);
         System.out.println(bonusBelowLimitForRegistered);
 
-        long bonusOverLimitForUnRegistered = service.calculate(true, 100_000_60);
-        System.out.println(bonusOverLimitForUnRegistered);
+        long bonusOverLimitForRegistered = service.calculate(true, 100_000_60);
+        System.out.println(bonusOverLimitForRegistered);
 
         long bonusBelowLimitForUnRegistered = service.calculate(false, 1000_60);
         System.out.println(bonusBelowLimitForUnRegistered);
 
-        long bonusOverLimitForRegistered = service.calculate(false, 100_000_60);
+        long bonusOverLimitForUnRegistered = service.calculate(false, 100_000_60);
         System.out.println(bonusOverLimitForUnRegistered);
     }
 }
